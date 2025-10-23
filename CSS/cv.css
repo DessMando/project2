@@ -1,0 +1,232 @@
+:root {
+    --Primary: #090C08;
+    --Secondary: #464646;
+    --Tekst: #B8B8B8;
+    --Titels: #F1F1F1;
+    --Buttons: #D72638;
+    --borders: #2E2E2E;
+
+    --TitleType: "Montserrat", sans-serif;
+}
+/* body en navbar */ 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: var(--Tekst);
+    margin: 0;
+    background-color: var(--Primary);
+    overflow-x: hidden;
+}
+
+.navigation {
+    background-color: var(--Primary);
+    top: 0;
+    z-index: 10;
+}
+
+.navigation a {
+    text-align: center;
+    padding: 14px 16px;
+    color: var(--Titels);
+    text-decoration: none;
+    font-size: 10px;
+} 
+
+.navigation a:hover {
+    color: var(--Buttons);
+}
+
+/* Over mij */
+
+* {
+    box-sizing: border-box;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: var(--Primary);
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
+img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+/* Kennis informatie */
+
+.tekst-seperation {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.tekst-seperation2 {
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+}
+
+.tekst-seperation3 {
+    display: flex;
+    justify-content: space-between;
+    width: 245px;
+}
+
+.tekst-seperation4 {
+    display: flex;
+    justify-content: space-between;
+    width: 224px;
+}
+
+.tekst-seperation5 {
+    display: flex;
+    justify-content: space-between;
+    width: 186px;
+}
+
+.tekst-seperation6 {
+    display: flex;
+    justify-content: space-between;
+    width: 203px;
+}
+
+.tekst-seperation7 {
+    display: flex;
+    justify-content: space-between;
+    width: 267px;
+}
+
+.Groote {
+    font-size: 10px;
+}
+
+.Kleiner {
+    font-size: 13px;
+}
+
+.tekst-seperation8 {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.tekst-seperation9 {
+    display: flex;
+    justify-content: space-between;
+    width: 501px;
+}
+
+table.cell {
+    margin: 0;
+    border: solid 1px var(--borders);
+    border-collapse: collapse;
+}
+
+table.cell td {
+    border: solid 1px var(--Secondary);
+    padding: 15px 35px;
+    text-align: center;
+}
+
+table.cell th {
+    border: solid 1px var(--borders);
+    padding: 5px;
+    background-color: var(--Secondary);
+}
+
+.dichter {
+    display: flex;
+    justify-content: space-between;
+    width: 161px;
+}
+
+/* CV Download */
+
+.img2 {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.button {
+    border: solid 1px var(--borders);
+    background-color: var(--Secondary);
+    color: var(--Tekst);
+    text-decoration: none;
+    border-radius: 10px;
+    width: 5px;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color: var(--Buttons);
+    transition: 0.5s;
+}
+
+.cv-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cv-tekst {
+    color: var(--Tekst);
+    max-width: 600px;
+}
+
+/* Footer */
+.flex-container {
+    display: flex;
+    justify-content: end;
+}
+
+.footer {
+    background: var(--Primary);
+    padding: 30px 0px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: var(--Secondary);
+    font-size: 0.8em;
+}
+
+.footer .row a{
+    text-decoration: none;
+    color: var(--Secondary);
+    transition: 0.5s;
+}
+
+.footer .row a:hover{
+    color: var(--Buttons);
+}
+
+.footer .row ul{
+    width: 100%;
+}
+
+.footer .row ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    right: 3%;
+}
+
+.footer .row a i{
+    font-size: 2em;
+    margin: 0% 1%;
+}
