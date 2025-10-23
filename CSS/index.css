@@ -35,7 +35,9 @@
     background-color: #090C08;
 }
 
-
+.text-muted {
+    color: var(--bs-body-color) !important;
+}
 
 /* Hero */
 
@@ -49,7 +51,7 @@
 }
 
 .hero-section::before {
-    background-image: url(/img/header-foto.jpg);
+    background-image: url("../img/header-foto.jpg");
     background-size: cover;
     background-position: center;
     content: "";
@@ -81,6 +83,29 @@
     background-repeat: no-repeat;
 }
 
+.carousel-item {
+    position: relative;
+    min-height: 200px;
+}
+
+.carousel-name {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: var(--bs-body-color);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.rounded-circle{
+    background-color: var(--bs-border-color);
+}
+
+.border-top {
+    border-color: var(--bs-border-color);
+}
 /* Footer */
 
 footer {
