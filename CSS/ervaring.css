@@ -1,181 +1,86 @@
 :root {
-    --Primary: #090C08;
-    --Secondary: #464646;
-    --Tekst: #B8B8B8;
-    --Titels: #F1F1F1;
-    --Buttons: #D72638;
-    --borders: #2E2E2E;
-
-    --TitleType: "Montserrat", sans-serif;
-}
-/* Header, body en navbar */
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: var(--Tekst);
-    margin: 0;
-    background-color: var(--Primary);
-    overflow-x: hidden;
+    --bs-primary: #D72638;     /* Buttons kleur */
+    --bs-secondary: #464646;   /* secundaire kleur */
+    --bs-body-bg: #090C08;     /* achtergrondkleur */
+    --bs-body-color: #B8B8B8;  /* tekstkleur */
+    --bs-border-color: #2E2E2E; /* borders */
+    
+    --bs-font-sans-serif: "Montserrat", sans-serif;
 }
 
-.navigation {
-    position: sticky;
-    background-color: var(--Primary);
+/* Navbar */
+.navbar {
+    background-color: var(--bs-body-bg) !important;
+    position: sticky !important;
     top: 0;
-    z-index: 10;
+    z-index: 3;
 }
 
-.navigation a {
-    text-align: center;
-    padding: 14px 16px;
-    color: var(--Titels);
-    text-decoration: none;
-    font-size: 10px;
-} 
-
-.navigation a:hover {
-    color: var(--Buttons);
+.navbar .nav-link,
+.navbar .navbar-brand,
+.nav-item {
+    color: var(--bs-body-color) !important;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: end;
+.navbar .nav-link:hover {
+    color: var(--bs-primary) !important;
 }
 
-.main-header {
-    display: flex;
-    color: var(--Tekst);
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 50px;
-    padding: 100px 10%;
+.dropdown-item {
+    color: var(--bs-body-color);
 }
 
-.header-content {
-    max-width: 1000px;
+.dropdown-item:hover {
+    color: var(--bs-primary);
+    background-color: #090C08;
 }
 
-.main-content h1 {
-    font-size: 56px;
-    margin: 0 0 10px;
-    font-weight: 400px;
+.text-muted {
+    color: var(--bs-body-color) !important;
 }
 
-.main-content h2 {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 25px;
-    color: var(--Titels)
+/* Body */
+
+.h4 {
+    color: var(--bs-body-color);
 }
 
-.header-content p {
-    font-size: 18px;
-    max-width: 900px;
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-.portfolio {
-    height: 50%;
-}
-
-/* Main content */
 .projects {
-    text-align: center;
-    padding: 50px 20px;
+    background-color: var(--bs-body-bg);
 }
 
-.project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+.text-center {
+    color: var(--bs-body-color);
 }
 
-.project-card {
-    background-color: var(--Secondary);
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px #0000001a;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
+.card-img-top1 {
+    height: 186px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+/* Footer */
+
+footer {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-top: 1px solid var(--bs-border-color);
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.project-card h3 {
-    margin: 15px 0 10px;
-}
-
-.project-card p {
-    color: var(--Tekst);
-    font-size: 14px;
-    min-height: 60px;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--Secondary);
-    color: var(--Tekst);
+footer a {
+    color: var(--bs-body-color) !important;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
 }
 
-.project-card a:hover {
-    background-color: var(--Buttons);
+footer a:hover {
+    color: var(--bs-primary) !important;
 }
 
-
-/* Footet */
-.footer {
-    background: var(--Primary);
-    padding: 30px 0px;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+footer .btn-primary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
 }
 
-.footer .row {
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: var(--Secondary);
-    font-size: 0.8em;
-}
-
-.footer .row a{
-    text-decoration: none;
-    color: var(--Secondary);
-    transition: 0.5s;
-}
-
-.footer .row a:hover{
-    color: var(--Buttons);
-}
-
-.footer .row ul{
-    width: 100%;
-}
-
-.footer .row ul li{
-    display: inline-block;
-    margin: 0px 20px;
-    position: relative;
-    right: 3%;
-}
-
-.footer .row a i{
-    font-size: 2em;
-    margin: 0% 1%;
+footer .btn-primary:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-body-color);
 }

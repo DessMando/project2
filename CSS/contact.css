@@ -1,141 +1,67 @@
 :root {
-    --Primary: #090C08;
-    --Secondary: #464646;
-    --Tekst: #B8B8B8;
-    --Titels: #F1F1F1;
-    --Buttons: #D72638;
-    --borders: #2E2E2E;
-
-    --TitleType: "Montserrat", sans-serif;
+    --bs-primary: #D72638;     /* Buttons kleur */
+    --bs-secondary: #464646;   /* secundaire kleur */
+    --bs-body-bg: #090C08;     /* achtergrondkleur */
+    --bs-body-color: #B8B8B8;  /* tekstkleur */
+    --bs-border-color: #2E2E2E; /* borders */
+    
+    --bs-font-sans-serif: "Montserrat", sans-serif;
 }
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: var(--Tekst);
-    margin: 0;
-    background-color: var(--Primary);
-    overflow-x: hidden;
-}
-
-.navigation {
-    background-color: var(--Primary);
-    position: sticky;
+/* Navbar */
+.navbar {
+    background-color: var(--bs-body-bg) !important;
+    position: sticky !important;
     top: 0;
-    z-index: 10;
+    z-index: 3;
 }
 
-.navigation a {
-    text-align: center;
-    padding: 14px 16px;
-    color: var(--Titels);
+.navbar .nav-link,
+.navbar .navbar-brand,
+.nav-item {
+    color: var(--bs-body-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+.dropdown-item {
+    color: var(--bs-body-color);
+}
+
+.dropdown-item:hover {
+    color: var(--bs-primary);
+    background-color: #090C08;
+}
+
+.text-muted {
+    color: var(--bs-body-color) !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    border-top: 1px solid var(--bs-border-color);
+}
+
+footer a {
+    color: var(--bs-body-color) !important;
     text-decoration: none;
-    font-size: 10px;
-} 
-
-.navigation a:hover {
-    color: var(--Buttons);
 }
 
-.flex-container {
-    display: flex;
-    justify-content: end;
+footer a:hover {
+    color: var(--bs-primary) !important;
 }
 
-.info {
-    display: inline-block;
-    padding: 50px;
+footer .btn-primary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
 }
 
-.position {
-    padding: 50px;
-}
-
-form {
-    width: 60%;
-    padding: 20px;;
-    border-radius:15px;
-    border: solid 4px var(--borders);
-    box-sizing: border-box;
-}
-
-input,
-select,
-textarea {
-    border: 2px solid var(--borders);
-    background-color: var(--Secondary);
-    border-radius: 10px;
-    color: var(--Tekst);
-}
-
-label {
-    display: inline-block;
-    padding-bottom: 30px;
-    color: var(--Secondary);
-    font-weight: 700px;
-}
-
-.social-media {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 40px;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-#social {
-    font-size: 35px;
-}
-
-.info2 {
-    display: flex;
-    padding: 50px;
-}
-
-
-.footer {
-    background: var(--Primary);
-    padding: 30px 0px;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-}
-
-.footer .row {
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: var(--Secondary);
-    font-size: 0.8em;
-}
-
-.footer .row a{
-    text-decoration: none;
-    color: var(--Secondary);
-    transition: 0.5s;
-}
-
-.footer .row a:hover{
-    color: var(--Buttons);
-}
-
-.footer .row ul{
-    width: 100%;
-}
-
-.footer .row ul li{
-    display: inline-block;
-    margin: 0px 20px;
-    position: relative;
-    right: 3%;
-}
-
-.footer .row a i{
-    font-size: 2em;
-    margin: 0% 1%;
+footer .btn-primary:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-body-color);
 }
