@@ -57,6 +57,17 @@
     height: 186px;
 }
 
+.btn-primary {
+    color: var(--bs-body-color);
+    border: solid 2px var(--bs-border-color);
+    background-color: var(--bs-secondary);
+}
+
+.btn-primary:hover {
+    color: var(--bs-body-color);
+    border: solid 2px var(--bs-primary);
+    background-color: var(--bs-primary);
+}
 /* Footer */
 
 footer {

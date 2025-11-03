@@ -39,6 +39,28 @@
     color: var(--bs-body-color) !important;
 }
 
+.btn-outline {
+    border: solid 2px var(--bs-border-color);
+    color: var(--bs-body-color);
+}
+
+.btn-outline:hover {
+    border: solid 2px var(--bs-border-color);
+    color: var(--bs-body-color);
+    background-color: var(--bs-primary);
+}
+
+.btn-out {
+    border: solid 2px #ffffff;
+    color: var(--bs-body-color);
+}
+
+.btn-out:hover {
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+    color: var(--bs-primary);
+}
+
 /* Hero */
 
 .hero-section {
